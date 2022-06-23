@@ -589,6 +589,58 @@ function bFunction(){//st button func
   bState = true;
 }//en button func
 
+function touchStarted(){
+  if(pNum === 1){//p1 mS st
+  //imgObj[21].checkImageArea();
+  //imgObj[22].checkImageArea();
+  //imgObj[23].checkImageArea();
+  for(let i = 21; i<imgObj.length;i++){
+    imgObj[i].checkImageArea();
+  }
+  }//p1 mS en
+  if(pNum === 2){
+    imgObj[1].checkImageArea2();
+    imgObj[2].checkImageArea2();
+    imgObj[3].checkImageArea2();
+    imgObj[4].checkImageArea2();
+    imgObj[5].checkImageArea2();
+  }
+  if(pNum === 3){
+    imgObj[6].checkImageArea2();
+    imgObj[7].checkImageArea2();
+    imgObj[8].checkImageArea2();
+    imgObj[9].checkImageArea2();
+    imgObj[10].checkImageArea2();
+  }
+    if(pNum === 4){
+    imgObj[11].checkImageArea2();
+    imgObj[12].checkImageArea2();
+    imgObj[13].checkImageArea2();
+    imgObj[14].checkImageArea2();
+    imgObj[15].checkImageArea2();
+  }
+    if(pNum === 5){
+    imgObj[16].checkImageArea2();
+    imgObj[17].checkImageArea2();
+    imgObj[18].checkImageArea2();
+  }
+  if(pNum === 0){
+  if(mouseX>664 && mouseX<728 && mouseY>272 && mouseY<293){
+    if(pNum === 0){
+      if(modoSexo === false){
+    Icontraseña.show();
+      }
+      else{
+        modoNormA();
+        print(modoSexo);
+      }
+    }
+  }
+  }
+  else{
+    Icontraseña.hide();
+  }
+}
 
 function mousePressed(){//st mousePressed
   if(pNum === 1){//p1 mS st
