@@ -833,6 +833,13 @@ function mousePressed(){//st mousePressed
   }
 }//en mousePressed
 
+function touchStarted () {
+  var fs = fullscreen();
+  if (!fs) {
+    fullscreen(true);
+  }
+}
+
 class imgLoaded { //imgObj st
   constructor(i,sx,sy,w,h){//imglcons st
     this.i = i;
