@@ -835,14 +835,11 @@ function mousePressed(){//st mousePressed
 }//en mousePressed
 
 function touchStarted () {
-  var fs = fullscreen();
-  if (!fs) {
-    fullscreen(true);
-  }
+hE = createElement("h1","DEVICE NOT SUPPORTED");
+  hE.style("font-size","30");
+  hE.style("background","#ff0000");
+  hE.position(windowWidth,windowHeight);
 }
-document.ontouchmove = function(event) {
-    event.preventDefault();
-};
 
 class imgLoaded { //imgObj st
   constructor(i,sx,sy,w,h){//imglcons st
