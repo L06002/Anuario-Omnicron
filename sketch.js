@@ -74,7 +74,7 @@ apodo[15] = "La Pica Colas"
 apodo[16] = "Tony"
 apodo[17] = "Marijuana/Doña Mary/Carnaval/Festival/Marijoe"
 apodo[18] = "The Lad"
-apodo[19] = ""
+apodo[19] = "Mr. Teacher Jhonny Jhonny"
 //
 let fraseL = [];
 //
@@ -96,7 +96,7 @@ fraseL[15] = "\"Jalo a todo menos a hacer la tarea\""
 fraseL[16] = "\"Roses are red, violets are blue, I\'m Moreno\""
 fraseL[17] = "\"La neta no quiero que esto se acabe\""
 fraseL[18] = "\"Never put pasion in front of principle\""
-fraseL[19] = ""
+fraseL[19] = "Friends are the new cool family"
 // frases sucias
 let fraseS = [];
 fraseS[1] = "\"Benito se supero en super 500\""
@@ -116,8 +116,8 @@ fraseS[14] = ""
 fraseS[15] = "\"Teacher Jony, ¿Le puedo picar la cola?\""
 fraseS[16] = "\"La vida aqui es como el pantalon de un niñito, bien cortito y repleto de caca\""
 fraseS[17]  = "\"No digas mamadas Merijein\""
-fraseS[18]  = "\"Si el caballo se comio 6 manzanas, yo compre 3 furros y luego me fume 3 puros con Jorge Luis en el CEMEN terio, ¿Cuantas pepitas de marihuana encontre en el ano de Luisito\""
-fraseS[19] = ""
+fraseS[18]  = "\"Si el caballo se comio 6 manzanas, yo compre 3 furros y luego me fume 3 puros con Jorge Luis en el CEMEN terio, ¿Cuantas pepitas de marihuana encontre en el ano de Luisito?\""
+fraseS[19] = "Don\´t play with the food"
 
 //precargar imagenes
 function preload(){//preload st
