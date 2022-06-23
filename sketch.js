@@ -574,15 +574,6 @@ function draw(){//draw st
   text(fraseS[8],606,height/2+75,460,390);
   }
     if(pNum === 14){
-  image(funny[10],180,height/2,360,640);
-  rectMode(CENTER);
-  text(apodo[10],606,50,480,50);
-  fill(0);
-  noStroke();
-  textSize(20);
-  text(fraseS[10],606,height/2+75,460,390);
-  }
-    if(pNum === 15){
   image(funny[11],180,height/2,360,640);
   rectMode(CENTER);
   text(apodo[11],606,50,480,50);
@@ -591,7 +582,26 @@ function draw(){//draw st
   textSize(20);
   text(fraseS[11],606,height/2+75,460,390);
   }
-  for(let i = 11; i<19;i++){//pg pics2 st
+    if(pNum === 15){
+  image(funny[12],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[12],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[12],606,height/2+75,460,390);
+  }
+     if(pNum === 16){
+  image(funny[9],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[9],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[9],606,height/2+75,460,390);
+  }
+    
+  for(let i = 12; i<19;i++){//pg pics2 st
     let n = i+5
     if(pNum === n){   
     let p = i+1;
@@ -768,59 +778,6 @@ function nextPage(){
 function bFunction(){//st button func
   bState = true;
 }//en button func
-
-function touchStarted(){
-  if(pNum === 1){//p1 mS st
-  //imgObj[21].checkImageArea();
-  //imgObj[22].checkImageArea();
-  //imgObj[23].checkImageArea();
-  for(let i = 21; i<imgObj.length;i++){
-    imgObj[i].checkImageArea();
-  }
-  }//p1 mS en
-  if(pNum === 2){
-    imgObj[1].checkImageArea2();
-    imgObj[2].checkImageArea2();
-    imgObj[3].checkImageArea2();
-    imgObj[4].checkImageArea2();
-    imgObj[5].checkImageArea2();
-  }
-  if(pNum === 3){
-    imgObj[6].checkImageArea2();
-    imgObj[7].checkImageArea2();
-    imgObj[8].checkImageArea2();
-    imgObj[9].checkImageArea2();
-    imgObj[10].checkImageArea2();
-  }
-    if(pNum === 4){
-    imgObj[11].checkImageArea2();
-    imgObj[12].checkImageArea2();
-    imgObj[13].checkImageArea2();
-    imgObj[14].checkImageArea2();
-    imgObj[15].checkImageArea2();
-  }
-    if(pNum === 5){
-    imgObj[16].checkImageArea2();
-    imgObj[17].checkImageArea2();
-    imgObj[18].checkImageArea2();
-  }
-  if(pNum === 0){
-  if(mouseX>664 && mouseX<728 && mouseY>272 && mouseY<293){
-    if(pNum === 0){
-      if(modoSexo === false){
-    Icontraseña.show();
-      }
-      else{
-        modoNormA();
-        print(modoSexo);
-      }
-    }
-  }
-  }
-  else{
-    Icontraseña.hide();
-  }
-}
 
 function mousePressed(){//st mousePressed
   if(pNum === 1){//p1 mS st
