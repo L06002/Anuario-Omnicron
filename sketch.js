@@ -720,6 +720,7 @@ function modoNormA(){
 function modoSexoA(){
   modoSexo = true;
   pagenumT = 25
+  Icontraseña.html("Basado¿?");
 }
 function checkPassword(){
   if(Icontraseña.value() === contraseña){
