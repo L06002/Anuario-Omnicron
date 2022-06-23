@@ -57,7 +57,7 @@ name[19] = "Mtro. Jonathan Reyes"
 //
 let apodo = [];
 apodo[1] = "Supan sin glùten"
-apodo[2] = "Cristi Narizona"
+apodo[2] = "Cristi, invento del gobierno"
 apodo[3] = "Dannonino"
 apodo[4] = "Regia"
 apodo[5] = "Melón/Melongas"
