@@ -96,7 +96,7 @@ fraseL[15] = "\"Jalo a todo menos a hacer la tarea\""
 fraseL[16] = "\"Roses are red, violets are blue, I\'m Moreno\""
 fraseL[17] = "\"La neta no quiero que esto se acabe\""
 fraseL[18] = "\"Never put pasion in front of principle\""
-fraseL[19] = "Friends are the new cool family"
+fraseL[19] = "\"Friends are the new cool family\""
 // frases sucias
 let fraseS = [];
 fraseS[1] = "\"Benito se supero en super 500\""
