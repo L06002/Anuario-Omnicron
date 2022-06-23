@@ -74,7 +74,7 @@ apodo[15] = "La Pica Colas"
 apodo[16] = "Tony"
 apodo[17] = "Marijuana/Doña Mary/Carnaval/Festival/Marijoe"
 apodo[18] = "The Lad"
-apodo[19] = "Mr. Teacher Jhonny Jhonny"
+apodo[19] = "\"Mr. Teacher Jhonny Jhonny\""
 //
 let fraseL = [];
 //
