@@ -132,9 +132,7 @@ function preload(){//preload st
   img[1] = loadImage("image"+1+".jpeg");
   img[2] = loadImage("image"+2+".jpeg");
   img[3] = loadImage("image"+3+".jpeg");
-  vid = createVideo("vids/Video.mp4");
-  vid.hide();
-  vid.pause();
+
   //
   for(let i = 4; i<104; i++){
     img[i] = loadImage("imgs/Image"+i+".jpeg");
@@ -178,8 +176,11 @@ function preload(){//preload st
   funny[16] = loadImage("funny/villaseñor2.JPG");
   funny[18] = loadImage("funny/zaragoza.jpg");
   funny[19] = loadImage("funny/jhonny.jpg");
-      Loading.show();
-    Loading.html("LOADING...");
+  Loading.show();
+  Loading.html("LOADING...");
+  vid = createVideo("vids/Video.mp4");
+  vid.hide();
+  vid.pause();
   //
 }//preload en
 
