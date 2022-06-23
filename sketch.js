@@ -576,29 +576,29 @@ function draw(){//draw st
     if(pNum === 14){
   image(funny[11],180,height/2,360,640);
   rectMode(CENTER);
-  text(apodo[11],606,50,480,50);
-  fill(0);
-  noStroke();
-  textSize(20);
-  text(fraseS[11],606,height/2+75,460,390);
-  }
-    if(pNum === 15){
-  image(funny[12],180,height/2,360,640);
-  rectMode(CENTER);
-  text(apodo[12],606,50,480,50);
-  fill(0);
-  noStroke();
-  textSize(20);
-  text(fraseS[12],606,height/2+75,460,390);
-  }
-     if(pNum === 16){
-  image(funny[9],180,height/2,360,640);
-  rectMode(CENTER);
   text(apodo[9],606,50,480,50);
   fill(0);
   noStroke();
   textSize(20);
   text(fraseS[9],606,height/2+75,460,390);
+  }
+    if(pNum === 15){
+  image(funny[12],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[10],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[10],606,height/2+75,460,390);
+  }
+     if(pNum === 16){
+  image(funny[9],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[11],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[11],606,height/2+75,460,390);
   }
     
   for(let i = 12; i<19;i++){//pg pics2 st
