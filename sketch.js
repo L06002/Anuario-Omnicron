@@ -117,7 +117,7 @@ fraseS[15] = "\"Teacher Jony, ¿Le puedo picar la cola?\""
 fraseS[16] = "\"La vida aqui es como el pantalon de un niñito, bien cortito y repleto de caca\""
 fraseS[17]  = "\"No digas mamadas Merijein\""
 fraseS[18]  = "\"Si el caballo se comio 6 manzanas, yo compre 3 furros y luego me fume 3 puros con Jorge Luis en el CEMEN terio, ¿Cuantas pepitas de marihuana encontre en el ano de Luisito?\""
-fraseS[19] = "Don\´t play with the food"
+fraseS[19] = "\"Don\´t play with the food\""
 
 //precargar imagenes
 function preload(){//preload st
