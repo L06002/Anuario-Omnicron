@@ -1,4 +1,5 @@
-
+let bckcolor = "#13068c";
+//
 let Loading;
 //
 let vid;
@@ -17,6 +18,7 @@ let pNum = 0;
 let bBack;
 //
 //imagenes y objeto imagen
+let funny = [];
 let person = [];
 let img = [];
 let imgObj = [];
@@ -53,24 +55,26 @@ name[17] = "Mariajose Vazquez Garcia"
 name[18] = "Jorge Andres Zaragoza Nava"
 name[19] = "Mtro. Jonathan Reyes"
 //
-let apodo1 = "Supan sin glùten"
-let apodo2 = "Cristi Narizona"
-let apodo3 = "Dannonino"
-let apodo4 = "Regia"
-let apodo5 = "Melón/Melongas"
-let apodo6 = "Valencia"
-let apodo7 = "La Cara de Nalga"
-let apodo8 = "Jorge Wiss el Chikiwiss"
-let apodo9 = "Betùn"
-let apodo10 = "Lalevergue"
-let apodo11 = "Lucia"
-let apodo12 = "Adriansin"
-let apodo13 = "Mate"
-let apodo14 = "Luisito/Luisin"
-let apodo15 = "La Pica Colas"
-let apodo16 = "Tony"
-let apodo17 = "Marijuana/Doña Mary/Carnaval/Festival/Marijoe"
-let apodo18 = "The Lad"
+let apodo = [];
+apodo[1] = "Supan sin glùten"
+apodo[2] = "Cristi Narizona"
+apodo[3] = "Dannonino"
+apodo[4] = "Regia"
+apodo[5] = "Melón/Melongas"
+apodo[6] = "Valencia"
+apodo[7] = "La Cara de Nalga"
+apodo[8] = "Jorge Wiss el Chikiwiss"
+apodo[9] = "Betùn"
+apodo[10] = "Lalevergue"
+apodo[11] = "Lucia"
+apodo[12] = "Adriansin"
+apodo[13] = "Mate"
+apodo[14] = "Luisito/Luisin"
+apodo[15] = "La Pica Colas"
+apodo[16] = "Tony"
+apodo[17] = "Marijuana/Doña Mary/Carnaval/Festival/Marijoe"
+apodo[18] = "The Lad"
+apodo[19] = ""
 //
 let fraseL = [];
 //
@@ -133,8 +137,6 @@ function preload(){//preload st
   vid.pause();
   //
   for(let i = 4; i<104; i++){
-    Loading.show();
-    Loading.html("LOADING...");
     img[i] = loadImage("imgs/Image"+i+".jpeg");
   }
   //
@@ -156,6 +158,28 @@ function preload(){//preload st
   person[17] = loadImage("Person"+17+".jpeg");
   person[18] = loadImage("Person"+18+".jpeg");
   person[19] = loadImage("Person"+19+".jpeg");
+  //
+  funny[1] = loadImage("funny/amrollahi.jpg");
+  funny[2] = loadImage("funny/argente.jpg");
+  funny[3] = loadImage("funny/arredondo.jpeg");
+  funny[4] = loadImage("funny/ceballos.jpg");
+  funny[5] = loadImage("funny/contreras.jpg");
+  funny[6] = loadImage("funny/flores.jpg");
+  funny[7] = loadImage("funny/lofrano.jpeg");
+  funny[8] = loadImage("funny/madrigal.JPG");
+  funny[9] = loadImage("funny/martinez.jpg");
+  funny[10] = loadImage("funny/beatrice.jpg");
+  funny[11] = loadImage("funny/torres.jpg");
+  funny[12] = loadImage("funny/lucia.jpg");
+  funny[13] = loadImage("funny/ochoa.JPG");
+  funny[14] = loadImage("funny/reyes.PNG");
+  funny[15] = loadImage("funny/sosa.JPG");
+  funny[17] = loadImage("funny/vazquez.jpg");
+  funny[16] = loadImage("funny/villaseñor2.JPG");
+  funny[18] = loadImage("funny/zaragoza.jpg");
+  funny[19] = loadImage("funny/jhonny.jpg");
+      Loading.show();
+    Loading.html("LOADING...");
   //
 }//preload en
 
@@ -185,6 +209,7 @@ function setup() {//setup st
   vid.style("width","576px");
   vid.style("height","720px");
   vid.showControls();
+  fondol2 = createGraphics(0,0)
   //
   imgObj[21] = new imgLoaded(2,0,0,52,57);
   imgObj[22] = new imgLoaded(1,52,0,69,88);
@@ -325,7 +350,7 @@ function draw(){//draw st
   vid.position(windowWidth/2-288,windowHeight/2-360);
 
   
-  background("#13068c");
+  background(bckcolor);
   imageMode(CENTER);
   lg1.clear();
   lg1.imageMode(CENTER);
@@ -350,6 +375,7 @@ function draw(){//draw st
   stroke("#f0d90a");
   strokeWeight(2);
   //formato Nombres en
+  if(modoSexo===false){
   for(let i = 0; i<5;i++){//pg pics1 st
     let n = i+6
     if(pNum === n){   
@@ -496,6 +522,159 @@ function draw(){//draw st
     text(name[18],568,475);
     
   }
+  }
+  else{
+    background("#ecf973")
+  fill("#0f26f5");
+  stroke("#0f26f5");
+    for(let i = 0; i<5;i++){//pg pics1 st
+    let n = i+6
+    if(pNum === n){   
+    let p = i+1;
+  image(funny[p],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[p],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[p],606,height/2+75,460,390);
+    }
+  }//pg pics1 en
+  if(pNum === 11){
+    image(funny[6],90,height/4,180,320);
+    image(funny[10],90*3,height/4*3,180,320);
+  rectMode(CENTER);
+  //rect(606,35,480,50);
+    strokeWeight(1);
+    textSize(20);
+  text(apodo[6],606,35,480,50);
+  text(apodo[9],606,65,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[6],606,height/2+75,460,390);
+  text(fraseS[9],606,height/2+250,460,390);
+  }
+  if(pNum === 12){
+  image(funny[7],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[7],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[7],606,height/2+75,460,390);
+  }
+    if(pNum === 13){
+  image(funny[8],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[8],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[8],606,height/2+75,460,390);
+  }
+    if(pNum === 14){
+  image(funny[10],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[10],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[10],606,height/2+75,460,390);
+  }
+    if(pNum === 15){
+  image(funny[11],180,height/2,360,640);
+  rectMode(CENTER);
+  text(apodo[11],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[11],606,height/2+75,460,390);
+  }
+  for(let i = 11; i<19;i++){//pg pics2 st
+    let n = i+5
+    if(pNum === n){   
+    let p = i+1;
+  image(funny[p],180,height/2,360,640);
+  rectMode(CENTER);
+  //rect(606,35,480,50);
+  text(apodo[p],606,50,480,50);
+  fill(0);
+  noStroke();
+  textSize(20);
+  text(fraseS[p],606,height/2+75,460,390);
+    }
+  }//pg pics2 en
+  //pgs pics en
+  
+  if(pNum === 2){
+    imageMode(CORNER);
+    image(funny[1],153,20,120,213);
+    image(funny[2],366,20,120,213);
+    image(funny[3],579,20,120,213);
+    image(funny[4],224,250,120,213);
+    image(funny[5],508,250,120,213);
+    textSize(15);
+    fill(0);
+    noStroke();
+    rectMode(CORNER)
+    text(apodo[1],213,245);
+    text(apodo[2],426,245);
+    text(apodo[3],639,245);
+    text(apodo[4],284,475);
+    text(apodo[5],568,475);
+  }
+  if(pNum === 3){
+    imageMode(CORNER);
+    image(funny[6],153,20,120,213);
+    image(funny[7],366,20,120,213);
+    image(funny[8],579,20,120,213);
+    image(funny[11],224,250,120,213);
+    image(funny[12],508,250,120,213);
+    textSize(15);
+    fill(0);
+    noStroke();
+    rectMode(CORNER)
+    text(apodo[9],213,15)
+    text(apodo[6],213,245);
+    text(apodo[7],426,245);
+    text(apodo[8],639,245);
+    text(apodo[10],284,475);
+    text(apodo[11],568,475);
+  }
+  if(pNum === 4){
+    imageMode(CORNER);
+    image(funny[9],153,20,120,213);
+    image(funny[13],366,20,120,213);
+    image(funny[14],579,20,120,213);
+    image(funny[15],224,250,120,213);
+    image(funny[16],508,250,120,213);
+    textSize(15);
+    fill(0);
+    noStroke();
+    rectMode(CORNER)
+    text(apodo[12],213,245);
+    text(apodo[13],426,245);
+    text(apodo[14],639,245);
+    text(apodo[15],284,475);
+    text(apodo[16],568,475);
+    
+  }
+  if(pNum === 5){
+    imageMode(CORNER);
+    image(funny[19],366,20,120,213);
+    image(funny[17],224,250,120,213);
+    image(funny[18],508,250,120,213);
+    textSize(15);
+    fill(0);
+    noStroke();
+    rectMode(CORNER)
+    text(apodo[19],426,245);
+    text(apodo[17],284,475);
+    text(apodo[18],568,475);
+    
+  }
+  }
   
   if(pNum === 1){//p1 st
     wadd = 426;
@@ -526,6 +705,7 @@ function draw(){//draw st
 function modoNormA(){
   modoSexo = false;
   pagenumT = 24;
+  Icontraseña.html("Basado¿?");
 }
 function modoSexoA(){
   modoSexo = true;
