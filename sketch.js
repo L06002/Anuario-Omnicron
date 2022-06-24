@@ -709,6 +709,12 @@ function draw(){//draw st
     hadd = windowHeight/2;
     wadd = 319;
     image(portada,width/2,height/2,width-10,height-10);
+    rectMode(CENTER);
+    textSize(75);
+    strokeWeight(15);
+    stroke(0);
+    fill(255);
+    text("OMNICRON  2022",width/2,height/2-75);
   }
   print(pNum);
   //rect(52,0,69,88);
