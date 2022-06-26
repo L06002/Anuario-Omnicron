@@ -831,14 +831,17 @@ function mousePressed(){//st mousePressed
     Icontraseña.html("Basado¿?");
       }
       else{
+        Icontraseña.html("Basado¿?");
         modoNormA();
         print(modoSexo);
+        Icontraseña.html("Basado¿?");
       }
     }
   }
   }
   else{
     Icontraseña.hide();
+    Icontraseña.html("Basado¿?");
   }
 }//en mousePressed
 
