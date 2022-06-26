@@ -828,6 +828,7 @@ function mousePressed(){//st mousePressed
     if(pNum === 0){
       if(modoSexo === false){
     Icontraseña.show();
+    Icontraseña.html("Basado¿?");
       }
       else{
         modoNormA();
