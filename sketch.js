@@ -874,7 +874,7 @@ function Creditos(){
 function modoNormA(){
   modoSexo = false;
   pagenumT = 24;
-  Icontraseña.html("Basado¿?");
+  Icontraseña.value("Basado¿?");
 }
 function modoSexoA(){
   modoSexo = true;
