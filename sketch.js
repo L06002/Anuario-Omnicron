@@ -78,7 +78,7 @@ apodo[19] = "\"Mr. Teacher Jhonny Jhonny\""
 //
 let fraseL = [];
 //
-fraseL[1] = ""
+fraseL[1] = "\"Waking up is the second hardest thing in the morning...\""
 fraseL[2] = "\"Huh? What? ¿Qué?\""
 fraseL[3] = "\"Dicen que los tramposos nunca ganan, pero aqui estoy yo graduándome\""
 fraseL[4] = "\"Esto no fue como High School Musical\""
@@ -112,7 +112,7 @@ fraseS[10] = "\"Amo los waffles, son lo mejor\""
 fraseS[11] = "NOT FOUND 404"
 fraseS[12] = "\"Si vas a hacer algo mal, hazlo bien\""
 fraseS[13] = "\"Me gusta el pan\""
-fraseS[14] = ""
+fraseS[14] = "\"AHHHH, SEXO\""
 fraseS[15] = "\"Teacher Jony, ¿Le puedo picar la cola?\""
 fraseS[16] = "\"La vida aqui es como el pantalon de un niñito, bien cortito y repleto de caca, patas chidas\""
 fraseS[17]  = "\"No digas mamadas Merijein\""
