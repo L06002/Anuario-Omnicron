@@ -302,7 +302,7 @@ function setup() {//setup st
   imgObj[107] = new imgLoaded(46,771,326,39,32);
   imgObj[108] = new imgLoaded(47,810,325,41,40);
   imgObj[109] = new imgLoaded(62,724,367,47,26);
-  imgObj[110] = new imgLoaded(3,771,359,39,33);
+  imgObj[110] = new imgLoaded(7,771,359,39,33);
   imgObj[111] = new imgLoaded(88,812,365,39,28);
   imgObj[112] = new imgLoaded(71,0,368,50,45);
   imgObj[113] = new imgLoaded(50,0,414,110,65);
