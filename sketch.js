@@ -918,7 +918,7 @@ function keyPressed(){
       }
     }
   if(keyCode===RIGHT_ARROW){
-    if(pNum<pagenumT-1){
+    if(pNum<pagenumT){
       pNum += 1;
     }
   }
