@@ -976,6 +976,7 @@ function mousePressed(){//st mousePressed
     imgObj[18].checkImageArea2();
   }
   if(pNum === 0){
+    Icontraseña.html("Basado¿?");
   if(mouseX>664 && mouseX<728 && mouseY>272 && mouseY<293){
     if(pNum === 0){
       if(modoSexo === false){
