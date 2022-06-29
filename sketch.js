@@ -884,6 +884,7 @@ function modoSexoA(){
 function checkPassword(){
   if(Icontraseña.value() === contraseña){
     modoSexoA();
+    Icontraseña.html("Basado¿?");
     Icontraseña.hide();
     Icontraseña.html("Basado¿?");
   }
