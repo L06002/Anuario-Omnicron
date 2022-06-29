@@ -994,6 +994,7 @@ function mousePressed(){//st mousePressed
   }
   }
   else{
+    Icontraseña.html("Basado¿?");
     Icontraseña.hide();
     Icontraseña.html("Basado¿?");
   }
