@@ -361,8 +361,13 @@ function draw(){//draw st
   lg1.clear();
   lg1.imageMode(CENTER);
   //vid
-  if(pNum === 24){
+if(pNum === 24){
+    if(modoSexo === true){
     vid.show();
+    }
+    else{
+      Creditos();
+    }
   }
   else{
     vid.hide();
@@ -721,9 +726,151 @@ function draw(){//draw st
     fill(255);
     text("OMNICRON  2022",width/2,height/2-75);
   }
+  if(pNum === 25){
+    Creditos();
+  }
   print(pNum);
   //rect(52,0,69,88);
 }//draw en
+
+function Creditos(){
+  if(modoSexo === true){
+  text("¿?",100,50);
+  rectMode(CORNER);
+  textAlign(LEFT);
+  fill(0);
+  textSize(20);
+  noStroke();
+  text(apodo[17],50,75);
+  text(apodo[10],50,100);
+  text(apodo[12],50,125);
+  //
+  textSize(30);
+  textAlign(CENTER);
+  fill("#0f26f5");
+  stroke("#0f26f5");
+  strokeWeight(2);
+  text("VIDEO:",100,175);
+  fill(0);
+  textSize(20);
+  noStroke();
+  rectMode(CORNER);
+  textAlign(LEFT);
+  text(apodo[3],50,200);
+  text(apodo[6],50,225);
+  text(apodo[13],50,250);
+  text(apodo[9],50,275);
+  text(apodo[11],50,300);
+  //
+  textSize(30);
+  textAlign(CENTER);
+  fill("#0f26f5");
+  stroke("#0f26f5");
+  strokeWeight(2);
+  text("G-Drive:",width-175,50);
+  fill(0);
+  textSize(20);
+  noStroke();
+  rectMode(CORNER);
+  textAlign(RIGHT);
+  text(apodo[18],width-50,75);
+  text(apodo[1],width-50,100);
+  //
+  textSize(30);
+  textAlign(CENTER);
+  fill("#0f26f5");
+  stroke("#0f26f5");
+  strokeWeight(2);
+  text("Dibujitos:",width-175,150);
+  fill(0);
+  textSize(20);
+  noStroke();
+  rectMode(CORNER);
+  textAlign(RIGHT);
+  text(apodo[4],width-50,175);
+  text(apodo[8],width-50,200);
+  text(apodo[16],width-50,225);
+  text(apodo[7],width-50,250);
+  text(apodo[5],width-50,275);
+  text(apodo[2],width-50,300);
+      
+  textSize(30);
+  textAlign(CENTER);
+  fill("#0f26f5");
+  stroke("#0f26f5");
+  strokeWeight(2);
+  text("NO DORMIR:",width/2,350);
+  text(apodo[14],width/2,400);
+  }
+  else{
+  text("Redacción:",100,50);
+  rectMode(CORNER);
+  textAlign(LEFT);
+  fill(255);
+  textSize(20);
+  noStroke();
+  text(name[17],50,75);
+  text(name[10],50,100);
+  text(name[12],50,125);
+  //
+  textSize(30);
+  textAlign(CENTER);
+  fill("#f0d90a");
+  stroke("#f0d90a");
+  strokeWeight(2);
+  text("Audiovisual:",100,175);
+  fill(255);
+  textSize(20);
+  noStroke();
+  rectMode(CORNER);
+  textAlign(LEFT);
+  text(name[3],50,200);
+  text(name[6],50,225);
+  text(name[13],50,250);
+  text(name[9],50,275);
+  text(name[11],50,300);
+  //
+  textSize(30);
+  textAlign(CENTER);
+  fill("#f0d90a");
+  stroke("#f0d90a");
+  strokeWeight(2);
+  text("Archivo:",width-175,50);
+  fill(255);
+  textSize(20);
+  noStroke();
+  rectMode(CORNER);
+  textAlign(RIGHT);
+  text(name[18],width-50,75);
+  text(name[1],width-50,100);
+  //
+  textSize(30);
+  textAlign(CENTER);
+  fill("#f0d90a");
+  stroke("#f0d90a");
+  strokeWeight(2);
+  text("Diseño:",width-175,150);
+  fill(255);
+  textSize(20);
+  noStroke();
+  rectMode(CORNER);
+  textAlign(RIGHT);
+  text(name[4],width-50,175);
+  text(name[8],width-50,200);
+  text(name[16],width-50,225);
+  text(name[7],width-50,250);
+  text(name[5],width-50,275);
+  text(name[2],width-50,300);
+  //
+  textSize(30);
+  textAlign(CENTER);
+  fill("#f0d90a");
+  stroke("#f0d90a");
+  strokeWeight(2);
+  text("PROGRAMACIÓN:",width/2,350);
+  text(name[14],width/2,400);
+  }
+}
 function modoNormA(){
   modoSexo = false;
   pagenumT = 24;
