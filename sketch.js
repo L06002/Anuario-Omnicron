@@ -4,7 +4,7 @@ let Loading;
 //
 let vid;
 //
-let pagenumT = 24;
+let pagenumT = 25;
 let modoSexo = false;
 let Icontraseña;
 let contraseña = "pene";
@@ -931,7 +931,7 @@ function prevPage(){
 }
 
 function nextPage(){
-  if(pNum<pagenumT-1){
+  if(pNum<pagenumT){
     pNum += 1;
   }
 }
